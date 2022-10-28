@@ -1,0 +1,46 @@
+@import '../common/mixins.scss';
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 19px 40px;
+    border: none;
+    border-radius: 10px;
+    background-color:$purpleColor;
+    cursor: pointer;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    color:white;
+    transition: .15s;
+    .icon {
+        width:23px;
+        height:23px;
+    }
+}
+
+.button:hover {
+    transform: scale(1.02);
+}
+
+.button.unactive {
+    background-color: #FFF;
+}
+@media (max-width:768px) {
+    .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 10px;
+        gap: 0;
+        font-size: 0;
+        .icon {
+            width:12px;
+            width:13px;
+        }
+    }
+}
